@@ -3,8 +3,8 @@ import pandas as pd
 
 st.write("Hello, Peeps!")
 st.title("Let's begin!")
-st.subheader("Here we will study about a :red[students] Dataset.")
-st.text("This dataset comprise of 395 students data from two Portuguese schools.")
+st.subheader("Here you can plot a :red[csv] Dataset.")
+st.text("This dataset can be any csv file you want to visualize.")
 st.write("We have used pandas to read the dataset.")
 st.write("We will use streamlit to visualize the dataset in different styles.")
 
@@ -15,7 +15,7 @@ if file is not None:
     st.dataframe(df)
 else:
     st.warning("Please upload a CSV file.")
-    
+
 st.markdown("This web-app represents an unclean dataset in 3 different styles:"
 " **:blue[Line Graph,Bar Graph,Area Graph]**")
 
