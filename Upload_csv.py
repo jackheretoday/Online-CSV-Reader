@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
 
-st.write("Hello, Peeps!")
+st.title("Hello, Peeps!")
 st.write("Are u tired or out of time to type code to visualize ur dataset?")
-st.write("Don't worry we :purple[got u!]")
+st.write("Don't worry we :red[got u!]")
 st.title("Let's begin!")
 st.subheader("Here you can plot a :red[csv] Dataset.")
 st.text("This dataset can be any csv file you want to visualize.")
