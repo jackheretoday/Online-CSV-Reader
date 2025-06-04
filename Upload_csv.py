@@ -1,18 +1,16 @@
 import streamlit as st
 import pandas as pd
 
-st.title("Hello, Peeps!")
-st.write("Are u tired or out of time to type code to visualize ur dataset?")
-st.write("Don't worry we :red[got u!]")
+st.write("Hello, Peeps!")
 st.title("Let's begin!")
 st.subheader("Here you can plot a :red[csv] Dataset.")
 st.text("This dataset can be any csv file you want to visualize.")
 st.write("We have used pandas to read the dataset.")
 st.write("We will use streamlit to visualize the dataset in different styles.")
-
 file=st.file_uploader("Upload csv file",type="csv")
+df = pd.read_csv(file)
+
 if file is not None:
-    df = pd.read_csv(file)
     st.write("Data Preview:")
     st.dataframe(df)
 else:
